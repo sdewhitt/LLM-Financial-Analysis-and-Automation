@@ -34,3 +34,5 @@ if __name__ == '__main__':
     print(f'\nMaking {num_requests} sequential requests to slow API...')
     start = time.time()
     single_results = fetch_slow_api()
+    end = time.time() - start
+    print(f'Single threaded execution time: {end:.2f} seconds')
